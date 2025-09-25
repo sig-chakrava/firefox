@@ -1,0 +1,15 @@
+{
+  "description": "This package file is for node modules used in mozilla-central/tools/browsertime",
+  "repository": {},
+  "license": "MPL-2.0",
+  "dependencies": {
+    "package.json": "^2.0.1"
+  },
+  "devDependencies": {
+    "browsertime": "https://github.com/sitespeedio/browsertime/tarball/2793b2eca7f8ab74ce6ea9cd57c0f512cefe774e",
+    "jimp": "0.22.12",
+    "usb-power-profiling": "1.6.0"
+  },
+  "notes(private)": "We don't want to publish to npm, so this is marked as private",
+  "private": true
+}

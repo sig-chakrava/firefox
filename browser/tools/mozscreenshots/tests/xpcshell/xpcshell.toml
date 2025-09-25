@@ -1,0 +1,5 @@
+[DEFAULT]
+run-if = ["os != 'android'"]
+support-files = ["../../mozscreenshots/extension/TestRunner.sys.mjs"]
+
+["test_testConfigurations.js"]

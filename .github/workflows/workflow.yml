@@ -1,0 +1,23 @@
+name: "Upload SARIF"
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      # required for all workflows
+      security-events: write
+      # only required for workflows in private repositories
+      actions: read
+      contents: read
+    steps:
+      # This step checks out a copy of your repository.
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Upload SARIF file
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: report.sarif.json

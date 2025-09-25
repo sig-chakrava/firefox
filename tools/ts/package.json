@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "@mdn/browser-compat-data": "^6.0.4",
+    "@types/webidl2": "24.4.3",
+    "@typescript/dom-lib-generator": "github:microsoft/TypeScript-DOM-lib-generator#@types/web@0.0.257",
+    "bcd-idl-mapper": "3.0.0",
+    "kdljs": "0.3.0",
+    "jest": "30.0.5",
+    "peggy": "5.0.6",
+    "print-diff": "2.0.0"
+  },
+  "overrides": {
+    "globals": "13.24.0"
+  },
+  "scripts": {
+    "postinstall": "npm explore @typescript/dom-lib-generator -- tsc --typeRoots ../../@types",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  }
+}

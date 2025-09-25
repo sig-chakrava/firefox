@@ -1,0 +1,46 @@
+[DEFAULT]
+subsuite = "translations"
+support-files = [
+  "head.js",
+  "!/toolkit/components/translations/tests/browser/shared-head.js",
+  "!/toolkit/components/translations/tests/browser/translations-test.mjs",
+]
+
+["browser_translations_about_preferences_manage_downloaded_languages.js"]
+
+["browser_translations_about_preferences_settings_always_translate_languages.js"]
+
+["browser_translations_about_preferences_settings_download_languages_all_ui.js"]
+
+["browser_translations_about_preferences_settings_download_languages_error_ui.js"]
+
+["browser_translations_about_preferences_settings_download_languages_ui.js"]
+
+["browser_translations_about_preferences_settings_never_translate_languages.js"]
+
+["browser_translations_about_preferences_settings_never_translate_sites.js"]
+
+["browser_translations_about_preferences_settings_ui.js"]
+
+["browser_translations_about_preferences_settings_ui_keyboard_a11y.js"]
+
+["browser_translations_about_preferences_settings_ui_tab.js"]
+
+["browser_translations_e2e_full_page_translate_with_lexical_shortlist.js"]
+
+["browser_translations_e2e_full_page_translate_without_lexical_shortlist.js"]
+
+["browser_translations_recent_language_memory_auto_translate.js"]
+
+["browser_translations_recent_language_memory_full_page_and_select.js"]
+
+["browser_translations_recent_language_memory_full_page_and_select_multi_window.js"]
+skip-if = ["os == 'linux' && os_version == '24.04' && processor == 'x86_64' && display == 'x11' && ccov"] # Bug 1972458
+
+["browser_translations_recent_language_memory_full_page_multi_window.js"]
+
+["browser_translations_recent_language_memory_full_page_multi_window_multi_tab.js"]
+
+["browser_translations_recent_language_memory_full_page_navigate.js"]
+
+["browser_translations_recent_language_memory_full_page_retranslate.js"]
